@@ -31,7 +31,9 @@ export function Button({
   className,
   ...props
 }: ButtonProps) {
-  const classes = `${variantClasses[variant]} ${sizeClasses[size]} shadow-sm ${
+  const classes = `${variantClasses[variant]} ${
+    sizeClasses[size]
+  } shadow-sm animate-pulse hover:animate-none hover:cursor-pointer ${
     className ?? ""
   }`;
   return <button className={classes} {...props} />;
