@@ -18,7 +18,7 @@ export function PostList() {
       </div>
       {posts.length === 0 ? (
         <p className="text-sm text-foreground/60">
-          No posts yet. Click "New Post" to create one.
+          No posts yet. Click &quot;New Post&quot; to create one.
         </p>
       ) : (
         <div className="grid gap-4">

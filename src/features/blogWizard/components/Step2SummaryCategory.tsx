@@ -1,6 +1,5 @@
 "use client";
 
-import { Input } from "@/shared/ui/Input";
 import { Textarea } from "@/shared/ui/Textarea";
 import type { WizardData } from "../types";
 import {

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "@/shared/ui/Button";
 import type { WizardData } from "../types";
 
 export type Step4ReviewSubmitProps = {
@@ -12,7 +11,6 @@ export type Step4ReviewSubmitProps = {
 
 export function Step4ReviewSubmit({
   value,
-  onSubmit,
   submittedPostId,
 }: Step4ReviewSubmitProps) {
   return (
