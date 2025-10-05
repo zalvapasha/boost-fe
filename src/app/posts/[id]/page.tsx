@@ -45,15 +45,15 @@ export default function PostDetailPage() {
         <Button variant="secondary" onClick={() => router.push("/")}>
           Back
         </Button>
-        <Button
-          variant="ghost"
+        <p
+          className="text-sm hover:underline cursor-pointer text-foreground/50"
           onClick={() => {
             removePost(post.id);
             router.push("/");
           }}
         >
           Delete
-        </Button>
+        </p>
       </div>
     </main>
   );

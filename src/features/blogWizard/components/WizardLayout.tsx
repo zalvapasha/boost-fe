@@ -69,10 +69,12 @@ export function WizardLayout({
 
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <Button variant="secondary" onClick={onBack}>
-            {step === 1 ? "Cancel" : "Back"}
-          </Button>
-          {step > 1 && (
+          {step !== 4 && (
+            <Button variant="secondary" onClick={onBack}>
+              {step === 1 ? "Cancel" : "Back"}
+            </Button>
+          )}
+          {step > 1 && step !== 4 && (
             <p
               className="text-sm hover:underline cursor-pointer text-foreground/50"
               onClick={() => router.push("/")}
